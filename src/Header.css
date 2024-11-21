@@ -1,0 +1,141 @@
+/* General Reset */
+body, h1, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Assets/Images/topfoldbg-v2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container for all header content */
+.header-container {
+    width: 90%; /* Restricts the width of content */
+    max-width: 1200px; /* Ensures it doesn’t stretch too wide */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Top Section */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcccb;
+}
+
+/* Get Started Button */
+.get-started {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 0;
+}
+
+.get-started:hover {
+    background-color: darkred;
+}
+
+/* Header Content */
+.header-content {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; /* Centers the text */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white; /* Ensures text color is visible */
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Learn More Button */
+.learn-more {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        width: 95%; /* Reduces padding for smaller screens */
+    }
+    .header-content h1 {
+        font-size: 32px;
+    }
+    .get-started {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
